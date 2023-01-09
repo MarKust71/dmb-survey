@@ -1,1 +1,5 @@
-export type QuestionA1Props = Record<string, never>;
+import { Control } from 'react-hook-form';
+
+export type QuestionA1Props = {
+  control: Control;
+};

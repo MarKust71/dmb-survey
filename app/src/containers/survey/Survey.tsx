@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTheme } from '@mui/material';
+import { Control, useForm } from 'react-hook-form';
+import { DevTool } from '@hookform/devtools';
 
 import { ChapterContainer } from 'components/chapterContainer/ChapterContainer';
 import { ChapterTitle } from 'components/chapterTitle/ChapterTitle';
@@ -28,22 +30,33 @@ export const Survey: React.FC<SurveyProps> = ({}) => {
   const classes = useStyles(theme);
   const { currentChapterTitle, currentChapterId, currentQuestionId, nextQuestion, prevQuestion } = useQuestions();
 
+  const { control, watch } = useForm();
+
+  const fields = watch();
+
+  useEffect(() => {
+    // TODO: remove!
+    console.log({ fields });
+  }, [fields]);
+
   return (
     <ChapterContainer>
       <ChapterTitle>{currentChapterTitle}</ChapterTitle>
 
-      <Question chapter={currentChapterId} question={currentQuestionId} />
+      <Question chapter={currentChapterId} question={currentQuestionId} control={control} />
 
       <ChapterFooter onClickNext={nextQuestion} onClickPrev={prevQuestion} />
+
+      <DevTool control={control} />
     </ChapterContainer>
   );
 };
 
-function Question({ chapter, question }: { chapter: string; question: string }) {
+function Question({ chapter, question, control }: { chapter: string; question: string; control: Control }) {
   if (chapter === 'A') {
     switch (question) {
       case '1':
-        return <QuestionA1 />;
+        return <QuestionA1 control={control} />;
 
       case '2':
         return <QuestionA2 />;

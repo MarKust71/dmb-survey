@@ -1,6 +1,6 @@
 import { Action, State } from './reducer.types';
 
-export const initialState = {
+export const initialState: State = {
   currentChapter: 0,
   currentQuestion: 0,
 };
