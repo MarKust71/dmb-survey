@@ -21,7 +21,7 @@ export const QuestionC1: React.FC<QuestionC1Props> = ({}) => {
         <FormControlLabel
           value={2}
           control={<Radio />}
-          label={'Mam jedno podstawowe i drugie, zapasowe źródło dochodu'}
+          label={'Mam jedno podstawowe i drugie, zapasowe, źródło dochodu'}
         />
         <FormControlLabel value={3} control={<Radio />} label={'Mam kilka źródeł dochodu'} />
         <FormControlLabel

@@ -20,7 +20,7 @@ export const QuestionC3: React.FC<QuestionC3Props> = ({}) => {
         <FormControlLabel
           value={1}
           control={<Radio />}
-          label={'Moje źródła dochodu są dla mnie wystarczające, nie boje się ich utracić'}
+          label={'Moje źródła dochodu są dla mnie wystarczające, nie boję się ich utracić'}
         />
         <FormControlLabel
           value={2}

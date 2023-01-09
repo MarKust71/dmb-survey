@@ -15,7 +15,7 @@ export const QuestionB6: React.FC<QuestionB6Props> = ({}) => {
       <Typography variant="h6">
         {
           // eslint-disable-next-line max-len
-          '6. Czy zdarza mi się doradzić/odradzić komuś jakiś produkt albo sprzedawcę, jeśli byłam z zakupu zadowolona albo niezadowolona?'
+          '6. Czy zdarza mi się doradzić/odradzić komuś jakiś produkt albo sprzedawcę, jeśli byłam z zakupu zadowolona/niezadowolona?'
         }
       </Typography>
 

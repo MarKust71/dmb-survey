@@ -22,9 +22,9 @@ export const QuestionC2: React.FC<QuestionC2Props> = ({}) => {
           control={<Radio />}
           label={'Zatrudnienie (umowa o pracę, umowa zlecenie/o dzieło, kontrakt menedżerski), emerytura, renta'}
         />
-        <FormControlLabel value={2} control={<Radio />} label={'Mam drugie, zapasowe źródło dochodu'} />
-        <FormControlLabel value={3} control={<Radio />} label={'Samozatrudnienie, wolny zawód (lekarz, prawnik)'} />
-        <FormControlLabel value={3} control={<Radio />} label={'Własna działalność gospodarcza'} />
+        <FormControlLabel value={2} control={<Radio />} label={'Mam drugie, zapasowe, źródło dochodu'} />
+        <FormControlLabel value={3} control={<Radio />} label={'Samozatrudnienie, wolny zawód (np. lekarz, prawnik)'} />
+        <FormControlLabel value={3} control={<Radio />} label={'Działalność gospodarcza na własny rachunek'} />
         <FormControlLabel value={3} control={<Radio />} label={'Inne źródła (np. dochody kapitałowe)'} />
       </RadioGroup>
     </ChapterContent>

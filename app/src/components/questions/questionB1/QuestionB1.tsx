@@ -23,7 +23,7 @@ export const QuestionB1: React.FC<QuestionB1Props> = ({}) => {
           control={<Radio />}
           label={'Kupuję sporadycznie - nie częściej niż raz w miesiącu'}
         />
-        <FormControlLabel value={3} control={<Radio />} label={'Unikam zakupów w internecie'} />
+        <FormControlLabel value={3} control={<Radio />} label={'Unikam zakupów w Internecie'} />
       </RadioGroup>
     </ChapterContent>
   );
